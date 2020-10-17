@@ -2,9 +2,20 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-use WeatherApp\WeatherInfoCommandHandler;
+use WeatherApp\Controllers\Exceptions\InvalidLocationException;
+use WeatherApp\Controllers\WeatherInfoController;
+use WeatherApp\Services\Output\ConsoleOutput;
+use WeatherApp\Services\Weather\OpenWeatherMapWeatherService;
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-(new WeatherInfoCommandHandler())($argv);
+$outputService = new ConsoleOutput();
+$weatherService = new OpenWeatherMapWeatherService();
+
+if(!$argv[1]) {
+    $outputService->printError("You must provide a Location");
+} else {
+    $weatherInfoController = new WeatherInfoController($weatherService, $outputService);
+    $weatherInfoController->printWeather($argv[1]);
+}

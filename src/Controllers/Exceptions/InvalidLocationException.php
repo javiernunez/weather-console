@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WeatherApp\Exceptions;
+namespace WeatherApp\Controllers\Exceptions;
 
 use Exception;
 
@@ -18,7 +18,12 @@ class InvalidLocationException extends Exception
 
     public static function notValidLocation(string $argument): InvalidLocationException
     {
-        return new self('Location ' . $argument . ' doesn\'t look like a valid location', self::NOT_VALID_LOCATION);
+        return new self('Location ' . $argument . ' does not look like a valid location', self::NOT_VALID_LOCATION);
+    }
+
+    public static function notFoundLocation(string $argument): InvalidLocationException
+    {
+        return new self('Location ' . $argument . ' has not been found', self::NOT_VALID_LOCATION);
     }
 
 }

@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace WeatherApp\Services\VO;
+namespace WeatherApp\Model;
 
-use WeatherApp\Services\VO\Exceptions\InvalidTemperatureException;
+use WeatherApp\Model\Exceptions\InvalidTemperatureException;
 
 class Temperature
 {
-    const KELVIN = 'kelvin';
-    const FAHRENHEIT = 'fahrenheit';
-    const CELSIUS = 'celsius';
+    public const KELVIN = 'kelvin';
+    public const FAHRENHEIT = 'fahrenheit';
+    public const CELSIUS = 'celsius';
 
-    private $unit;
-    private $value;
+    private string $unit;
+    private float $value;
 
     public static function units(): array
     {
@@ -24,23 +24,14 @@ class Temperature
         ];
     }
 
-    public function __construct($value, string $unit = self::FAHRENHEIT)
+    public function __construct(float $value, string $unit = self::FAHRENHEIT)
     {
         if (!in_array($unit, self::units(), true)) {
             throw InvalidTemperatureException::notValidTemperatureUnits($unit);
         }
 
-        if (!is_numeric($value)) {
-            throw InvalidTemperatureException::notValidValue($value);
-        }
-
         $this->unit  = $unit;
-        $this->value = (float)$value;
-    }
-
-    public function getUnit()
-    {
-        return $this->unit;
+        $this->value = $value;
     }
 
     public function getCelsiusValue()

@@ -2,33 +2,35 @@
 
 declare(strict_types=1);
 
-namespace tests\Services;
+namespace  Tests\Services;
 
 use PHPUnit\Framework\TestCase;
-use WeatherApp\Services\OpenWeatherMapWeatherService;
-use WeatherApp\Services\VO\Temperature;
+use WeatherApp\Controllers\Exceptions\InvalidLocationException;
+use WeatherApp\Model\Temperature;
+use WeatherApp\Services\Weather\OpenWeatherMapWeatherService;
 
 final class OpenWeatherAPITest extends TestCase
 {
 
     public function testWeatherInfoIsGatheredFromTheAPI(): void
     {
-        $_ENV['OPEN_WEATHER_API_KEY'] = 'c0f764ce5e4c25576b8d6325fc223810';
-        $openWeatherAPIService = new OpenWeatherMapWeatherService('Madrid');
+        $temperature = (new OpenWeatherMapWeatherService())->getCurrentTemperature('Madrid');
 
-        $temperature = $openWeatherAPIService->getCurrentTemperature();
-
-        self::assertEquals(Temperature::KELVIN, $temperature->getUnit());
+        self::assertInstanceOf(Temperature::class, $temperature);
     }
 
     public function testNotValidLocation(): void
     {
-        $_ENV['OPEN_WEATHER_API_KEY'] = 'c0f764ce5e4c25576b8d6325fc223810';
-        $openWeatherAPIService = new OpenWeatherMapWeatherService('PPGPDPDSGPSDFPDSFPDSPFSDPFP');
+        $this->expectException(InvalidLocationException::class);
 
-        $temperature = $openWeatherAPIService->getCurrentTemperature();
+        $temperature = (new OpenWeatherMapWeatherService())->getCurrentTemperature('NON EXISTENT LOCATION');
 
         self::assertEquals(Temperature::KELVIN, $temperature->getUnit());
+    }
+
+    public function setUp()
+    {
+        $_ENV['OPEN_WEATHER_API_KEY'] = 'c0f764ce5e4c25576b8d6325fc223810';
     }
 
 }

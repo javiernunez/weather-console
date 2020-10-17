@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WeatherApp\Services\VO\Exceptions;
+namespace WeatherApp\Model\Exceptions;
 
 use Exception;
 
