@@ -15,7 +15,7 @@ You can install docker from [https://docs.docker.com/compose/install/](https://d
 
 ```shell script
 cd weather-console
-docker compose up -d`
+docker-compose up -d`
 ```
 
 Docker will install all neeeded libraries, dependencies and env configuration for you.
