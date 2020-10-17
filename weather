@@ -1,0 +1,10 @@
+#!/usr/local/bin/php
+<?php
+require __DIR__ . '/vendor/autoload.php';
+
+use WeatherApp\WeatherInfoCommandHandler;
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+(new WeatherInfoCommandHandler())($argv);

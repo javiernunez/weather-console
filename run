@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+# Create docker-compose command to run
+COMPOSE="docker-compose"
+
+if [ $# -gt 0 ];then
+    # Run composer
+    if [ "$1" == "composer" ]; then
+        shift 1
+        $COMPOSE run --rm \
+            -w /home/root/projects/weather \
+            php -dmemory_limit=-1 /usr/local/bin/composer "$@"
+
+    # Run tests
+    elif [ "$1" == "tests" ]; then
+        shift 1
+        $COMPOSE run --rm \
+            -w /home/root/projects/weather \
+            php ./vendor/phpunit/phpunit/phpunit "$@" --testdox
+
+    # Run tests
+    elif [ "$1" == "weather" ]; then
+        shift 1
+        $COMPOSE run --rm \
+            -w /home/root/projects/weather \
+            php /home/root/projects/weather/weather "$@"
+
+    else
+	      echo "Please, you need to include a command. Here are the commands you can use"
+    	  echo "./run composer install"
+    	  echo "./run weather"
+    fi
+
+else
+    echo "Please, you need to include a command. Here are the commands you can use"
+    echo "./run composer install"
+    echo "./run weather"
+fi

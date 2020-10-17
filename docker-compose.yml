@@ -1,0 +1,8 @@
+version: '3'
+services:
+  php:
+    build: .
+    container_name: weather-app
+    tty: true
+    volumes:
+      - ./:/home/root/projects/weather

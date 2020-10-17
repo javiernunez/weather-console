@@ -1,0 +1,26 @@
+{
+    "name": "javiernunez/weather",
+    "description": "Demo application to show the weather in Console",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "^5.2@dev",
+        "guzzlehttp/guzzle": "^7.0",
+        "pragmarx/ia-arr": "^1.0@dev"
+    },
+    "authors": [
+        {
+            "name": "Javier Núñez",
+            "email": "javi@javiernunez.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "phpunit/phpunit": "^7"
+    },
+    "autoload":{
+        "psr-4": {
+          "WeatherApp\\": "src"
+        }
+    }
+}

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="201215bb-cec3-4e70-b438-f629fdacd878" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectId" id="1iyMUrvxuYLSJJGbRykMllVtToJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Services/VO/Exceptions" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Services/VO/Exceptions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Services/VO" />
+      <recent name="$PROJECT_DIR$/src/Model" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/Controllers" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="nginx/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="docker/nginx/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.nginx/Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="201215bb-cec3-4e70-b438-f629fdacd878" name="Default Changelist" comment="" />
+      <created>1602875396509</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602875396509</updated>
+      <workItem from="1602875397904" duration="486000" />
+      <workItem from="1602876032069" duration="16220000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="619" y="320" width="732" height="446" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602877794396">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="619" y="320" width="732" height="446" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/60.27.1860.1053/3840.0.1920.1080@60.27.1860.1053" timestamp="1602877794396" />
+    <state x="633" y="17" width="694" height="1060" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602892016073">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="633" y="17" width="694" height="1060" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1080/60.27.1860.1053/3840.0.1920.1080@60.27.1860.1053" timestamp="1602892016073" />
+    <state x="723" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602891879687">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="723" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/60.27.1860.1053/3840.0.1920.1080@60.27.1860.1053" timestamp="1602891879687" />
+    <state x="629" y="92" width="712" height="903" key="#nginx/Dockerfile" timestamp="1602876168821">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="629" y="92" width="712" height="903" key="#nginx/Dockerfile/1920.0.1920.1080/60.27.1860.1053/3840.0.1920.1080@60.27.1860.1053" timestamp="1602876168821" />
+    <state x="744" y="298" key="FileChooserDialogImpl" timestamp="1602881068444">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="744" y="298" key="FileChooserDialogImpl/1920.0.1920.1080/60.27.1860.1053/3840.0.1920.1080@60.27.1860.1053" timestamp="1602881068444" />
+    <state x="697" y="468" width="531" height="481" key="NewPhpClassDialog" timestamp="1602892001783">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="697" y="468" width="531" height="481" key="NewPhpClassDialog/1920.0.1920.1080/60.27.1860.1053/3840.0.1920.1080@60.27.1860.1053" timestamp="1602892001783" />
+    <state x="763" y="457" width="443" height="173" key="NewPhpFileDialog" timestamp="1602890718658">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="763" y="457" width="443" height="173" key="NewPhpFileDialog/1920.0.1920.1080/60.27.1860.1053/3840.0.1920.1080@60.27.1860.1053" timestamp="1602890718658" />
+    <state x="471" y="175" width="1037" height="737" key="SettingsEditor" timestamp="1602882140574">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="471" y="175" width="1037" height="737" key="SettingsEditor/1920.0.1920.1080/60.27.1860.1053/3840.0.1920.1080@60.27.1860.1053" timestamp="1602882140574" />
+    <state x="696" y="62" width="577" height="962" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1602882472101">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="696" y="62" width="577" height="962" key="com.jetbrains.php.test.PhpNewTestDialog/1920.0.1920.1080/60.27.1860.1053/3840.0.1920.1080@60.27.1860.1053" timestamp="1602882472101" />
+    <state x="593" y="186" width="793" height="708" key="find.popup" timestamp="1602886403745">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="593" y="186" width="793" height="708" key="find.popup/1920.0.1920.1080/60.27.1860.1053/3840.0.1920.1080@60.27.1860.1053" timestamp="1602886403745" />
+    <state x="654" y="243" key="run.anything.popup" timestamp="1602888044551">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="654" y="243" key="run.anything.popup/1920.0.1920.1080/60.27.1860.1053/3840.0.1920.1080@60.27.1860.1053" timestamp="1602888044551" />
+    <state x="653" y="237" width="672" height="683" key="search.everywhere.popup" timestamp="1602892179718">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="653" y="237" width="672" height="683" key="search.everywhere.popup/1920.0.1920.1080/60.27.1860.1053/3840.0.1920.1080@60.27.1860.1053" timestamp="1602892179718" />
+    <state x="709" y="439" width="562" height="209" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602883697192">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="709" y="439" width="562" height="209" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/1920.0.1920.1080/60.27.1860.1053/3840.0.1920.1080@60.27.1860.1053" timestamp="1602883697192" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestCase.php</url>
+          <line>57</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
