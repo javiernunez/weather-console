@@ -5,34 +5,19 @@ In order to run this application you need to have `docker` and `docker-compose` 
 
 You can install docker from [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 
-## Installation Instructions
+## Installation Command
 
-1. Clon the project 
-
-`git clone git@github.com:javiernunez/weather-console.git`
-
-2. Go into the folder project, build image and start the container 
-
-```shell script
-cd weather-console
-docker-compose up -d`
+```
+git clone git@github.com:javiernunez/weather-console.git && \
+cd weather-console && \
+docker-compose up -d && \
+./run composer install
 ```
 
-Docker will install all neeeded libraries, dependencies and env configuration for you.
-
-## Running the application
-To run the application you need to run:
-
-```shell script
-. run weather Madrid
-```
-
-## Testing the application
-To run PHPUnit tests you need to run:
-
-```shell script
-. run tests
-```
+## Commands
+- Run the application `./run weather Madrid`
+- Run phpunit tests `./run tests`
+- Run composer inside the container `./run composer`
 
 ## Notes about arquitecture and design choices
 
@@ -51,3 +36,6 @@ I didn't model Location and WeatherSummary for simplicity.
 
 ### Why the lack of documentation in the code?
 I am a defender of code explaining itself. New features like Type hinting and choosing the good naming and structure should be enough to understand the code. So I hope you don't need any code documentation to understand how all is working.
+
+### .env file not ignored
+Should be ignored for API key security, for simplicity I left it there.
